@@ -133,10 +133,13 @@ body{background:#fff}
 .blog-post h3{margin:8px 0 18px;font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2}
 .blog-post p{white-space:pre-wrap;color:#47515a;line-height:1.75}
 .blog-post p:last-child{margin-bottom:0}
+.blog-editor-link{margin:30px 0 0;text-align:center;font-size:13px}
+.blog-editor-link a{color:#a82924;text-underline-offset:3px}
 .admin-content{max-width:830px}
 .admin-panel{padding:28px;border:1px solid #d9dedf;border-left:5px solid var(--gold);background:#fff}
 .admin-panel[hidden],.blog-empty[hidden]{display:none}
 .admin-form{display:grid;gap:16px}
+.admin-form[hidden]{display:none}
 .admin-form label{display:grid;gap:6px;font-weight:700}
 .admin-form input,.admin-form textarea{width:100%;padding:11px;border:1px solid #9ca6aa;border-radius:0;background:#fff;color:var(--ink);font:inherit}
 .admin-form textarea{min-height:220px;resize:vertical}
