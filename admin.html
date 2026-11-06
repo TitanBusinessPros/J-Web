@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Blog editor | Our Family Deserves to Be Heard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="admin-config.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">OF</span><span>OUR FAMILY<span class="brand-small">DESERVES TO BE HEARD</span></span></a><nav class="primary-nav is-open" aria-label="Main navigation"><a href="blog.html">View blog</a><a href="index.html">Home</a></nav></div></header>
+  <main id="main">
+    <section class="blog-hero"><div class="container"><span class="eyebrow">PRIVATE EDITOR</span><h1>Blog <em>editor.</em></h1><p>Write an update and publish it to the website.</p></div></section>
+    <section class="section"><div class="container admin-content">
+      <p id="admin-status" class="admin-status" role="status" aria-live="polite"></p>
+      <div id="login-panel" class="admin-panel">
+        <form id="login-form" class="admin-form">
+          <label>Password <input id="admin-password" type="password" autocomplete="current-password" required></label>
+          <div class="admin-actions"><button class="button button-gold" type="submit">Log in</button></div>
+        </form>
+      </div>
+      <div id="editor-panel" class="admin-panel" hidden>
+        <div class="admin-actions"><h2>New post</h2><button id="logout-button" type="button">Log out</button></div>
+        <form id="post-form" class="admin-form">
+          <label>Title <input id="post-title" maxlength="160" required></label>
+          <label>Date <input id="post-date" type="date" required></label>
+          <label>Post <textarea id="post-body" maxlength="20000" required></textarea></label>
+          <div class="admin-actions"><button class="button button-gold" type="submit">Publish post</button></div>
+        </form>
+        <h2>Your posts</h2>
+        <div id="admin-posts" class="admin-list"></div>
+      </div>
+    </div></section>
+  </main>
+</body>
+</html>

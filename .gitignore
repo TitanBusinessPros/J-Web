@@ -2,3 +2,6 @@
 README.md
 MEMORY.md
 /.publish-repo/
+/blog-service/.dev.vars*
+/blog-service/.env*
+/blog-service/node_modules/
