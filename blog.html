@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
   <script src="music.js" defer></script>
-  <script src="blog.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,14 +43,28 @@
     <section class="section blog-section" aria-labelledby="updates-title">
       <div class="container blog-content">
         <h2 id="updates-title">Latest <em>updates.</em></h2>
-        <div class="blog-empty" id="blog-empty">
-          <h3>Our first post is coming soon.</h3>
-          <p>We will add dated updates here as our story develops. For now, you can read our account and the materials we have shared.</p>
-          <a class="blog-home-link" href="index.html#story">Read our story <span aria-hidden="true">↗</span></a>
+        <div id="blog-posts" class="blog-posts">
+          <!--
+            TO ADD A POST ON GITHUB:
+            1. Copy the article block below and paste it above the "No posts" box.
+            2. Replace the date, title, and paragraph text. Use YYYY-MM-DD in datetime.
+            3. Click "Commit changes" on GitHub. Newest posts go first.
+
+            <article class="blog-post">
+              <time datetime="2026-11-05">November 5, 2026</time>
+              <h3>Title of the update</h3>
+              <p>Write the first paragraph here.</p>
+              <p>Write another paragraph here if needed.</p>
+            </article>
+          -->
+          <!-- Add new posts above this line. To delete a post, remove its entire article block. -->
+          <div class="blog-empty">
+            <h3>Our first post is coming soon.</h3>
+            <p>We will add dated updates here as our story develops. For now, you can read our account and the materials we have shared.</p>
+            <a class="blog-home-link" href="index.html#story">Read our story <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div id="blog-posts" class="blog-posts" aria-live="polite"></div>
-        <script id="blog-data" type="application/json">[]</script>
-        <p class="blog-editor-link"><a href="admin.html">Manage blog posts</a></p>
+        <p class="blog-editor-link"><a href="https://github.com/TitanBusinessPros/J-Web/edit/main/blog.html" target="_blank" rel="noopener">Edit this blog on GitHub <span aria-hidden="true">↗</span></a></p>
       </div>
     </section>
   </main>
