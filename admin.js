@@ -199,9 +199,12 @@
       editorPanel.hidden = false;
       setStatus('Editor unlocked.');
       const saved = await storedHandle();
-      if (saved && await saved.queryPermission({ mode: 'readwrite' }) === 'granted') {
-        await loadFile(saved);
-        setStatus('Editor unlocked and blog file connected.');
+      if (saved) {
+        const permission = await saved.queryPermission({ mode: 'readwrite' });
+        if (permission === 'granted' || await saved.requestPermission({ mode: 'readwrite' }) === 'granted') {
+          await loadFile(saved);
+          setStatus('Editor unlocked and blog file connected.');
+        }
       }
     } catch {
       setStatus('The editor could not open in this browser.');
